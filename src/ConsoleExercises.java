@@ -8,15 +8,20 @@ public class ConsoleExercises {
 /* BELOW: is creating a string to output pi using the same variable without manipulating it to have a string */
         System.out.format("The value of pi is approximately %s /n", pi);
 
-System.out.println("========SPACING==========");
+        System.out.println("========SPACING==========");
 
         /* Exploring SCANNER CLASS */
         Scanner userInput = new Scanner(System.in);
-        System.out.printf("What is your favorite number?");
+            /*Question 1*/
+        System.out.print("What is your favorite number?");
                 int userInt = userInput.nextInt();
                 System.out.println(userInt);
 
+        System.out.print("What is your favorite color?");
+                System.out.println(userInput.next());
                 /* ABOVE: is a scanner user to get user input and return user input */
+
+            /*Question 2*/
 
     }
 }
