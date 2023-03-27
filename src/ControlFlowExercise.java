@@ -12,11 +12,12 @@ public class ControlFlowExercise {
         */
 
         /* (B) DO-WHILE: Count by 2's, start @zero and end @100 */
-           int i = 100;
+           long i = 2;
                do {
                    System.out.println(i);
-                   i -= 5;
-               } while (i >= -10);
+                   i = i * i;
+
+               } while (i < 1000000);
 
 
         /* Fizzbuzz */
