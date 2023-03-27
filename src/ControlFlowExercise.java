@@ -28,8 +28,8 @@ public class ControlFlowExercise {
 
         /* FOR LOOP REFACTOR for above*/
 
-        for(int i = 5; i <=15; i++){
-            System.out.println("i is: " + i);
+        for (long i = 2; i < 1000000; i=i*i){
+            System.out.println(i);
         }
 
 
