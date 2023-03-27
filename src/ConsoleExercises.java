@@ -31,9 +31,26 @@ public class ConsoleExercises {
 */
 
         /* Question 3 */
-        System.out.println("Enter sentence");
+        /*  System.out.println("Enter sentence");
+         *
+         *      String userSentence = userInput.nextLine();
+         *      System.out.println(userSentence);
+         */
 
-        String userSentence = userInput.nextLine();
-        System.out.println(userSentence);
+        /* CALCULATE PERIMETER OF CODEUP CLASSROOM */
+        System.out.println("Enter length: ");
+        String length = userInput.nextLine();
+        int l = Integer.parseInt(length);
+
+        System.out.println("Enter width: ");
+        String width = userInput.nextLine();
+        int w = Integer.parseInt(width);
+
+        int area = l * w;
+        int perimeter = (l*2) + (w*2);
+
+        System.out.printf("Area of the classroom is: %d", area);
+        System.out.printf("\nPerimeter of the classroom is %d", perimeter);
+
     }
 }
