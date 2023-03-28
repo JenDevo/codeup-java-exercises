@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercise {
     public static void main(String[] args){
 
@@ -33,21 +35,31 @@ public class ControlFlowExercise {
 
         /* Fizzbuzz */
 
-        for(int i = 1; i < 100; i++){
-            boolean three = (i % 3) == 0;
-            boolean five = (i % 5) == 0;
-
-            if(three && five){
-                System.out.println("FizzBuzz");
-            }else if (three){
-             System.out.println("Fizz");
-            }else if (five){
-                System.out.println("Buzz");
-            }else {
-                System.out.println(i);
-            }
-        }
+//        for(int i = 1; i < 100; i++){
+//            boolean three = (i % 3) == 0;
+//            boolean five = (i % 5) == 0;
+//
+//            if(three && five){
+//                System.out.println("FizzBuzz");
+//            }else if (three){
+//             System.out.println("Fizz");
+//            }else if (five){
+//                System.out.println("Buzz");
+//            }else {
+//                System.out.println(i);
+//            }
+//        }
 
         /* Display a table of powers */
+        Scanner userScan = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int userInput = userScan.nextInt();
+
+        System.out.println("number | squared | cubed");
+        System.out.println("------ | ------- | ------");
+
+        for(int i = 1; i <= userInput; i++){
+            System.out.printf("%7d|%9d|%7d\n", i, i*i, i*i*i);
+        }
     }
 }
