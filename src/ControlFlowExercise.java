@@ -52,6 +52,9 @@ public class ControlFlowExercise {
 
         /* Display a table of powers */
         Scanner userScan = new Scanner(System.in);
+        boolean confirm = true;
+        do {
+
         System.out.println("Enter a number: ");
         int userInput = userScan.nextInt();
 
@@ -61,5 +64,13 @@ public class ControlFlowExercise {
         for(int i = 1; i <= userInput; i++){
             System.out.printf("%7d|%9d|%7d\n", i, i*i, i*i*i);
         }
+        System.out.println("Would you like to continue? (Y/N)");
+        confirm = userScan.next().equalsIgnoreCase("y");
+        } while (confirm);
+
+        /* Convert int grad to letter grade */
+//        Scanner userScan = new Scanner(System.in);
+//        System.out.println("Enter any number, 0-100: ");
+//        int intGrade = userScan.nextInt();
     }
 }
