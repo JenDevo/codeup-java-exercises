@@ -51,26 +51,45 @@ public class ControlFlowExercise {
 //        }
 
         /* Display a table of powers */
-        Scanner userScan = new Scanner(System.in);
-        boolean confirm = true;
-        do {
-
-        System.out.println("Enter a number: ");
-        int userInput = userScan.nextInt();
-
-        System.out.println("number | squared | cubed");
-        System.out.println("------ | ------- | ------");
-
-        for(int i = 1; i <= userInput; i++){
-            System.out.printf("%7d|%9d|%7d\n", i, i*i, i*i*i);
-        }
-        System.out.println("Would you like to continue? (Y/N)");
-        confirm = userScan.next().equalsIgnoreCase("y");
-        } while (confirm);
+//        Scanner userScan = new Scanner(System.in);
+//        boolean confirm = true;
+//        do {
+//
+//        System.out.println("Enter a number: ");
+//        int userInput = userScan.nextInt();
+//
+//        System.out.println("number | squared | cubed");
+//        System.out.println("------ | ------- | ------");
+//BELOW: %-7d -=left justified, #=spaces taken up, d=digit, %=format
+//        for(int i = 1; i <= userInput; i++){
+//            System.out.printf("%-7d|%-9d|%-7d\n", i, i*i, i*i*i);
+//        }
+//        System.out.println("Would you like to continue? (Y/N)");
+//        confirm = userScan.next().equalsIgnoreCase("y");
+//        } while (confirm);
 
         /* Convert int grad to letter grade */
-//        Scanner userScan = new Scanner(System.in);
-//        System.out.println("Enter any number, 0-100: ");
-//        int intGrade = userScan.nextInt();
+        Scanner userScan = new Scanner(System.in);
+        boolean confirm;
+
+        do{
+        System.out.println("Enter any number, 0-100: ");
+        int intGrade = userScan.nextInt();
+
+        if(intGrade <= 59){
+            System.out.println("F");
+        }else if(intGrade <= 66){
+            System.out.println("D");
+        } else if (intGrade <= 79) {
+            System.out.println("C");
+        }else if(intGrade <= 87){
+            System.out.println("B");
+        }else{
+            System.out.println("A");
+        }
+
+            System.out.println("Would you like to continue? (Y/N)");
+        confirm = userScan.next().equalsIgnoreCase("y");
+        }while(confirm);
     }
 }
