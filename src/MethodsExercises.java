@@ -4,15 +4,18 @@ import java.util.Scanner;
 public class MethodsExercises {
     public static void main(String[] args){
         /* Basic arithmetic */
-        System.out.println(basicAddition(5, 9));
-        System.out.println(basicSubtraction(10, 5));
-        System.out.println(basicMultiplication(10, 10));
-        System.out.println(basicDivision(10, 2));
-        System.out.println(basicModulus(100, 3));
+//        System.out.println(basicAddition(5, 9));
+//        System.out.println(basicSubtraction(10, 5));
+//        System.out.println(basicMultiplication(10, 10));
+//        System.out.println(basicDivision(10, 2));
+//        System.out.println(basicModulus(100, 3));
 
         /* #2 Number range with user input */
-        int userInput = getInteger(1, 40);
-        System.out.printf("\nYour number is %d ", userInput);
+//        int userInput = getInteger(1, 40);
+//        System.out.printf("\nYour number is %d ", userInput);
+
+//         System.out.print(getFactorial(1, 10));
+
     }
 
 
@@ -52,4 +55,42 @@ public class MethodsExercises {
         System.out.printf("Yay! %d is a valid number", userNumber);
         return userNumber;
     }
+
+
+    /* Calculate Factorial of number */
+
+//    public static long getFactorial (int min, int max) {
+//        Scanner userNumScan = new Scanner(System.in);
+//
+//        System.out.printf("Enter a number from %d to %d: ", min, max);
+//        int userNumber = userNumScan.nextInt();
+//
+//        if (userNumber > max || userNumber < min) {
+//            System.out.println("Whoops! Number is invalid");
+//            getInteger(min, max);
+//        }
+//        System.out.printf("You entered a valid number: %d! ", userNumber);
+//        boolean confirm = true;
+//        System.out.println("Would you like to continue? (Y/N)");
+//        confirm = userNumScan.next().equalsIgnoreCase("y");
+//            do{
+//                long integer = getFactorial(1, 10);
+//                long total = 1;
+//                    for (long i = 1; i <= integer; i++) {
+//                         total *= i;
+//                        return total;
+//                    }
+//
+//    } while (confirm);
+//}
 }
+
+
+// do {
+//
+//        long integer = getInteger(1, 10);
+//        long total = 1;
+//        for (long i = 1; i <= integer; i++) {
+//            total *= i;
+//        } return total;
+//    }while (confirm);
