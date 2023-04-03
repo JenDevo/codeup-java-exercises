@@ -25,7 +25,7 @@ public class MoviesApplication {
 
             switch (userNumber){
                 case 0:
-                    System.out.println("Thanks for using this movie application.");
+                    System.out.println("Exiting...");
                     break;
 
                 case 1:
