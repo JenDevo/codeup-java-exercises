@@ -8,7 +8,6 @@ public class ServerNameGenerator {
         return arr[wordIndex];
     }
 
-
     public static void main(String[] arr){
         String[] adjectives = {"busy", "cautious", "adventurous", "calm", "hilarious", "grotesque", "helpful", "kind", "precious", "wild"};
         String[] nouns = {"law", "nature", "idea", "temperature", "power", "language", "security", "movie", "organization", "teacher"};
@@ -20,7 +19,5 @@ public class ServerNameGenerator {
         System.out.println("Here is your server name: ");
         System.out.printf("%s %s", randomAdjective, randomNoun);
     }
-
-
 
 }
