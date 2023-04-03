@@ -26,6 +26,7 @@ public class MoviesApplication {
             switch (userNumber){
                 case 0:
                     System.out.println("Exiting...");
+                    proceed = false;
                     break;
 
                 case 1:
