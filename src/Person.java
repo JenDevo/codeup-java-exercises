@@ -33,7 +33,6 @@ public class Person {
         String secondNewStudent = student2.getName();
         System.out.println("The name of the student is " + newStudent);
         System.out.println("The name of the first person is " + Person1Name);
-        System.out.println(Person1.sayHello());
         System.out.println("We have a new student, their name is " + secondNewStudent);
         System.out.println(student2.sayHello());
     }
