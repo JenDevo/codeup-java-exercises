@@ -2,6 +2,24 @@ package shapes;
 
 public class Square extends Rectangle{
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+BELOW is the code from the Inheritance and Polymorphism exercise
     private double side;
 
     public Square(double side) {
@@ -18,4 +36,5 @@ public class Square extends Rectangle{
     public double getArea() {
         return Math.pow(side, 2);
     }
+*/
 }

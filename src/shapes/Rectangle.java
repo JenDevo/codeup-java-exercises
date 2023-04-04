@@ -1,6 +1,23 @@
 package shapes;
 
 public class Rectangle {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*BELOW is from the Inheritance and Polymorphism exercise*/
+/*
     protected double length;
     protected double width;
 
@@ -24,4 +41,5 @@ public class Rectangle {
     double getPerimeter(){
        return (2 * length) + (2 * width);
     }
+*/
 }
