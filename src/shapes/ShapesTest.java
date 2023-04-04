@@ -3,10 +3,16 @@ package shapes;
 public class ShapesTest {
     public static void main(String[] args) {
 
-        Measurable myShape = new Rectangle(6, 12);
+        Measurable myShape = new Rectangle(5, 11);
+        System.out.println("Rectangle");
         System.out.println("The Area of your rectangle is: " + myShape.getArea());
-        System.out.println("The Perimeter of your rectangle is: " + myShape.getPerimeter());
+        System.out.println("The Perimeter of your rectangle is: " + myShape.getPerimeter() + "\n");
 
+
+        Measurable myShape2 = new Square(3);
+        System.out.println("Square");
+        System.out.println("The Area of your square is: " + myShape2.getArea());
+        System.out.println("The Perimeter of your square is: " + myShape2.getPerimeter());
 
 
 
