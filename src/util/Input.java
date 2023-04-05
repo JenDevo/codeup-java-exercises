@@ -9,7 +9,7 @@ public class Input {
         scanner = new Scanner(System.in);
     }
 
-    String getString(){
+    public String getString(){
         System.out.println("Enter string\n");
         return scanner.nextLine();
     }
