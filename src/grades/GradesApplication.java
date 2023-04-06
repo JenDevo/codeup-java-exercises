@@ -55,10 +55,10 @@ public class GradesApplication {
 
             if (students.containsKey(userInput)){
                 System.out.println("Name: " + students.get(userInput).getName() + "\nGrade Avg: " + students.get(userInput).getGradeAverage());
-                System.out.println("Would you like to continue?");
+//                System.out.println("Would you like to continue? (yes/no)");
+
             } else
                 System.out.println("Whoops, invalid username...");
         }while (validUser);
-        System.out.println("Would you like to see another student? (yes/no)");
     }
 }
